@@ -1,5 +1,5 @@
-Bab 2. Menggunakan Interpreter Python
-pada lokasi ini meruapakan lokasi python 
-C:\Users\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.7
-perintah di bawah ini merupakan langkah untuk menjalankan python
-python dapat dilihat di cmd jika berjalan maka muncul seperti ini jika menuliskan perintah di “Python3.7”
+2. Menggunakan Interpreter Python
+Interpreter Python biasanya diinstal sebagai /usr/local/bin/python3.7 pada mesin-mesin yang tersedia; 
+python3.7
+instalasi Python biasanya ditempatkan di C: \ Python37
+To add this directory to your path, you can type the following command into the command prompt in a DOS box:
