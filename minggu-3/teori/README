@@ -1,0 +1,25 @@
+1. Membangun Analytics di 500px :
+tantangan yang dihadapi 500px ketika mencoba untuk tumbuh melampaui kecocokan pasar produk. Dia menjelaskan secara rinci proses bagaimana ia membangun gudang data dari tanah dan ke atas.
+
+2. Mengukur Platform Eksperimentasi Airbnb :
+menunjukkan bagaimana tim teknik data Airbnb membangun pipa data khusus untuk mendukung alat internal seperti kerangka pelaporan eksperimen. Pekerjaan ini sangat penting dalam membentuk dan mengukur budaya pengembangan produk Airbnb.
+
+3. Menggunakan ML untuk Memprediksi Nilai Rumah di Airbnb :
+model pembelajaran mesin pemberian skor offline membutuhkan banyak pekerjaan rekayasa data di muka. Khususnya, banyak tugas yang terkait dengan rekayasa fitur, bangunan, dan data pelatihan backfilling menyerupai karya rekayasa data.
+
+ETL: Extract, Transform, dan Load
+kepanjangan dari etl adalah EKSTRACT, TRANSFORM, LOAD
+
+EXTRACT : adalah langkah di mana sensor menunggu sumber data hulu ke darat (misalnya sumber hulu bisa berupa mesin atau log yang dibuat pengguna, salinan basis data relasional, dataset eksternal ... dll). Setelah tersedia, kami mengangkut data dari lokasi sumber mereka ke transformasi lebih lanjut.
+TRANSFORM : adalah jantung dari pekerjaan ETL mana pun, di mana kami menerapkan logika bisnis dan melakukan tindakan seperti penyaringan, pengelompokan, dan agregasi untuk menerjemahkan data mentah ke dalam dataset analisis siap. Langkah ini membutuhkan banyak pemahaman bisnis dan pengetahuan domain.
+LOAD : memuat data yang diproses dan mengangkutnya ke tujuan akhir.
+berikut contoh gambar proses ETL
+
+
+
+Dua Paradigma: SQL- vs JVM-Centric ETL
+terdapat 2 paradigma yang digunakan untuk membangun etl :
+
+ETL JVM-sentris biasanya dibangun dalam bahasa berbasis JVM (seperti Java atau Scala). Saluran pipa data teknik dalam bahasa JVM ini sering melibatkan transformasi data pemikiran dengan cara yang lebih penting, misalnya dalam hal pasangan nilai kunci. Menulis Fungsi yang Ditetapkan Pengguna (UDFs) kurang menyakitkan karena seseorang tidak perlu menulisnya dalam bahasa yang berbeda, dan pekerjaan pengujian dapat lebih mudah untuk alasan yang sama. Paradigma ini cukup populer di kalangan insinyur.
+ETL SQL-sentris biasanya dibangun dalam bahasa seperti SQL, Presto, atau Hive. Pekerjaan ETL sering didefinisikan dengan cara deklaratif , dan hampir semuanya berpusat di sekitar SQL dan tabel. Menulis UDFs terkadang merepotkan karena seseorang harus menuliskannya dalam bahasa yang berbeda (misalnya Java atau Python), dan pengujian dapat menjadi lebih menantang karena ini. Paradigma ini populer di kalangan ilmuwan data.
+SUMBER MATERI
